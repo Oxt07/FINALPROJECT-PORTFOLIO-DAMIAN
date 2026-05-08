@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link class="iconlogo" rel="icon" type="image/x-icon" href="heartlogo.png">
+</head>
+<body class="liquid-body">
+    <header class="glass-nav">
+        <span class="png-title">
+            <a href="practiceweb.html">
+                <img src="undertale.png" class="logo">
+            </a>
+        </span>
+        <nav class="navigation-bar">
+         <a href="practiceweb.html">Home</a>
+         <a href="AboutMe.html">About</a>
+         <a href="ProjectSection.html">Projects</a>
+         <a href="ContactSection.html">Contact</a>
+    </nav>
+    </header>
+
+    <!--CONTACT SECTION-->
+    <div id="contact-page" class="contact-section">
+        <div class="contact-container">
+            <h1 class="contact-title">CONTACT ME</h1>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/18W2nCzt9n/" class="social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rdplayz3?_r=1&_t=ZS-96BQxVD9QcD" class="social-link">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/oxt_07?igsh=cWFlMnM2ajQyNWJ5" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://open.spotify.com/user/312f44bbu3xoviaougxvk5e5wlta?si=7ia8JMmhRHuh-ODKXhhfVQ" class="social-link">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/cddcb71e78.js" crossorigin="anonymous"></script>
+    <script>
+    
+        const menuToggle = document.getElementById('menuToggle');
+        const navBar = document.querySelector('.navigation-bar');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navBar.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
