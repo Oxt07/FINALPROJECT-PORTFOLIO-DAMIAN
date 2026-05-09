@@ -646,3 +646,95 @@ body {
   padding-top: 200px;
   padding-left: 70px;;
 }
+
+.icon-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.icon-more {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 3px solid #1a0033;
+    position: relative;
+    z-index: 2;
+}
+
+.icon-image-rowing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 200px;
+}
+
+.icon-more {
+  width: 500px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 10 8px 25px rgba(248, 2, 248, 0.4);
+  transition: all 1.0s ease;
+  object-fit: cover;
+}
+
+.icon-more:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(245, 117, 245, 0.6);
+}
+
+
+
+.about-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 180px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.icon-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-image-rowing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text-content {
+    max-width: 750px;
+    color: white;
+}
+
+.about-text-content h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #d8d8d8;
+}
+
+.about-text-content p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #d0d0d0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .about-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

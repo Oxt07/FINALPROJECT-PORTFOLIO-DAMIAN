@@ -4,37 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
     <link rel="stylesheet" href="style.css">
-    <link class="iconlogo" rel="icon" type="image/x-icon" href="heartlogo.png" width: 50px;>
+    <link rel="icon" type="image/x-icon" href="heartlogo.png">
 </head>
+
 <body class="liquid-body">
-    <div id="header">
-    <div class="container">
-    <header class="glass-nav">
-     <span class="png-title">
-        <a href="file:///C:/Users/USER/Documents/MyWeb/practiceweb.html#" rel="">
-         <img src="undertale.png" class="logo">
-         </a>  
-  </span>
-     <nav class="navigation-bar">
-         <a href="practiceweb.html">Home</a>
-         <a href="AboutMe.html">About</a>
-         <a href="ProjectSection.html">Projects</a>
-         <a href="ContactSection.html">Contact</a>
+
+<div id="header">
+<div class="container">
+
+<header class="glass-nav">
+
+    <span class="png-title">
+        <a href="practiceweb.html">
+            <img src="undertale.png" class="logo">
+        </a>
+    </span>
+
+    <nav class="navigation-bar">
+        <a href="practiceweb.html">Home</a>
+        <a href="AboutMe.html">About</a>
+        <a href="ProjectSection.html">Projects</a>
+        <a href="ContactSection.html">Contact</a>
     </nav>
+
 </header>
-        <!--BODY-->
-        <div class="header-content">
-            <div class="header-text">
-                <p>IT-101 student</p>
-                <h1>Hi! I'm Ardie <br> Charls Damian</h1>
-            </div>
-            <div class="profile-image-container">
-                <img src="main-profile.jpg" alt="Profile" class="profile-image">
-            </div>
-        </div>
+
+<!-- UPDATED SECTION -->
+<div class="about-layout">
+
+    <!-- IMAGE -->
+    <div class="icon-desktop">
+        <div class="icon-image-rowing">
+            <a href="icon.html">
+                <img src="icon.png" alt="Profile" class="icon-more">
+            </a>
         </div>
     </div>
+
+    <!-- TEXT BESIDE IMAGE -->
+    <div class="about-text-content">
+
+        <h1>Activity 4 & Assignment 4</h1>
+
+        <p>
+            This project is a personal profile icon section designed for my website. It showcases a simple yet visually appealing layout where the profile image is displayed prominently alongside an introduction about myself. The design focuses on minimalism and balance, combining a modern layout with a clean aesthetic. It serves as an entry point for users to quickly recognize my identity and navigate through my personal portfolio website.
+        </p>
+
+        <!-- TABS -->
+<div class="tabs-container">
+    <button class="tab-btn active" onclick="showTab('tools')">Tools</button>
+    <button class="tab-btn" onclick="showTab('screenshot')">Screenshot</button>
+    <button class="tab-btn" onclick="showTab('link')">Link</button>
+</div>
+
+<!-- TAB CONTENT -->
+<div class="tab-content active" id="tools">
+    <h2>Tools</h2>
+    <p>
+        HTML, CSS, and Font Awesome website
+    </p>
+</div>
+
+<div class="tab-content" id="screenshot">
+    <h2>Screenshot</h2>
+    <p>
+       
+    </p>
+</div>
+
+<div class="tab-content" id="link">
+    <h2>Link</h2>
+    <a href="https://github.com/Oxt07/FINALPROJECT-PORTFOLIO-DAMIAN/commit/f279605ea2cff6004cd9285490e987c19501b852">Github link</a>
+</div>
+    </div>
+</div>
+</div>
+</div>
+
+<script>
+function showTab(tabId) {
+
+    // hide all tabs
+    const contents = document.querySelectorAll(".tab-content");
+    contents.forEach(tab => tab.classList.remove("active"));
+
+    // remove active button style
+    const buttons = document.querySelectorAll(".tab-btn");
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    // show selected tab
+    document.getElementById(tabId).classList.add("active");
+
+    // set active button
+    event.target.classList.add("active");
+}
+</script>
 
 </body>
 </html>
